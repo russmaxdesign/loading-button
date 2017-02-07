@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Loading button</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Loading button</h1>
+    <p><a href="https://github.com/russmaxdesign/loading-button">Github Page</a></p>
+
+    <p>A simple demo of a button which can be given a loading state when needed.
+    The loading state makes the button appear disabled, with a centered, animated
+    loading icon.</p>
+    <p>The loading state is triggered by adding a modifier class:
+    <code>button--loading</code>. It should also be set with the <code>disabled</code>
+    boolean attribute so that users cannot interact with the button (click on it,
+    tab to it etc) while it is in this state.</p>
+
+    <h2>Examples</h2>
+    <h3>Static</h3>
+    <button type="button" class="button-primary">
+      Button
+    </button>
+    <h3>Loading</h3>
+    <button type="button" class="button-primary button--loading" disabled>
+      Button
+    </button>
+    <h3>Loading - works on any width</h3>
+    <button type="button" class="button-primary button--loading" disabled>
+      A very wide button
+    </button>
+
+    <h2>Code</h2>
+    <figure>
+      <figcaption class="markup-heading">Markup</figcaption>
+<pre><code class="language-html">&lt;button type="button" class="button-primary button--loading" disabled&gt;
+  Button
+&lt;/button&gt;</code></pre>
+    </figure>
+    <hr>
+
+    <p style="margin-top: 2em;"><a href="https://github.com/russmaxdesign/loading-button">Github Page</a></p>
+  </div>
+
+<script src="assets/js/prism.js"></script>
+</body>
+</html>

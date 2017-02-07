@@ -1,0 +1,66 @@
+// variables
+
+$loading-icon-size: 1.5em;
+$button-size: 2.25em;
+$button-color: #0073c3;
+
+
+// button modifier
+
+.button--loading {
+  position: relative;
+  cursor: not-allowed;
+  color: transparent;
+  background: #aaa;
+  border-color: #aaa;
+
+  &:hover,
+  &:focus {
+    background: #aaa;
+    border-color: #aaa;
+    color: transparent;
+  }
+}
+
+
+// loading icon
+
+.button--loading:before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  width: $loading-icon-size;
+  height: $loading-icon-size;
+  margin-top: -($loading-icon-size / 2);
+  margin-left: -($loading-icon-size / 2);
+  content: '';
+  background: url(../img/loading-icon.png);
+  background-size: $loading-icon-size $loading-icon-size;
+
+  -webkit-animation: spin 2s linear infinite;
+     -moz-animation: spin 2s linear infinite;
+          animation: spin 2s linear infinite;
+}
+
+
+// animation
+
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
